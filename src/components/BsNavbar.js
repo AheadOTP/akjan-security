@@ -1,9 +1,10 @@
 import React from 'react';
 import { Navbar, NavItem, Nav, NavDropdown, MenuItem } from 'react-bootstrap';
+import '../styles/BsNavbar.css';
 
 function BsNavbar() {
   return (
-    <Navbar collapseOnSelect margin={0} padding={0}>
+    <Navbar collapseOnSelect className="BsNavBar">
       <Navbar.Header>
         <Navbar.Brand>
           <a href="#">React-Bootstrap</a>

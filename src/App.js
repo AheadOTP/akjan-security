@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Grid, Navbar } from 'react-bootstrap';
 import BsCarousel from './components/BsCarousel';
 import BsNavbar from './components/BsNavbar';
+import BsThumbnail from './components/BsThumbnail';
 import './App.css';
 
 class App extends Component {
@@ -10,6 +11,7 @@ class App extends Component {
       <div>
         <BsNavbar />
         <BsCarousel />
+        <BsThumbnail />
       </div>
     );
   }
