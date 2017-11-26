@@ -12,4 +12,4 @@ function BsJumbotron() {
   );
 }
 
-export default BsJumbotron;
+export { BsJumbotron };

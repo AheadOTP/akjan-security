@@ -30,4 +30,4 @@ function BsCarousel() {
   );
 }
 
-export default BsCarousel;
+export { BsCarousel };

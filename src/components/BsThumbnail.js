@@ -41,4 +41,4 @@ function BsThumbnail() {
   );
 }
 
-export default BsThumbnail;
+export { BsThumbnail };

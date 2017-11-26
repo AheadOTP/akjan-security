@@ -27,4 +27,4 @@ function ContactFaces() {
   );
 }
 
-export default ContactFaces;
+export { ContactFaces };

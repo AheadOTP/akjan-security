@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
-import BsCarousel from './components/BsCarousel';
 import BsNavbar from './components/BsNavbar';
-import BsThumbnail from './components/BsThumbnail';
-import BsJumbotron from './components/BsJumbotron';
-import GoogleMap from './components/GoogleMap';
-import ContactFaces from './components/ContactFaces';
+import Main from './components/Main';
 import './App.css';
 
 class App extends Component {
@@ -12,11 +8,7 @@ class App extends Component {
     return (
       <div>
         <BsNavbar />
-        <BsCarousel />
-        <BsThumbnail />
-        <BsJumbotron />
-        <ContactFaces />
-        <GoogleMap />
+        <Main />
       </div>
     );
   }
