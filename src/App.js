@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { Grid, Navbar } from 'react-bootstrap';
 import BsCarousel from './components/BsCarousel';
 import BsNavbar from './components/BsNavbar';
 import BsThumbnail from './components/BsThumbnail';
+import BsJumbotron from './components/BsJumbotron';
+import GoogleMap from './components/GoogleMap';
+import ContactFaces from './components/ContactFaces';
 import './App.css';
 
 class App extends Component {
@@ -12,6 +14,9 @@ class App extends Component {
         <BsNavbar />
         <BsCarousel />
         <BsThumbnail />
+        <BsJumbotron />
+        <ContactFaces />
+        <GoogleMap />
       </div>
     );
   }
