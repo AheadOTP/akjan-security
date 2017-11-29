@@ -13,5 +13,12 @@
 
 img {
   max-width: 200px;
-  border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+  .contactFaces {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }

@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, NavItem, Nav, NavDropdown, MenuItem } from 'react-bootstrap';
-import '../styles/BsNavbar.css';
+import '../../styles/BsNavbar.css';
 
 function BsNavbar() {
   return (
     <Navbar collapseOnSelect fixedTop className="BsNavBar">
       <Navbar.Header>
         <Navbar.Brand>
-          <a href="">React-Bootstrap</a>
+          <Link to='/'>Akjan Security</Link>
         </Navbar.Brand>
         <Navbar.Toggle />
       </Navbar.Header>

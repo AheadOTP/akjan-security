@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/GoogleMap.css';
+import '../../styles/Footer.css';
 
-function GoogleMap() {
+function Footer() {
   return (
     <div className="footer">
       <div className="footerElement contacts" >
@@ -73,4 +73,4 @@ function GoogleMap() {
   );
 }
 
-export { GoogleMap };
+export { Footer };

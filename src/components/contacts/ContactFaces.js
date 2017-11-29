@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import '../styles/ContactFaces.css';
+import '../../styles/ContactFaces.css';
 
 function ContactFaces() {
   return (

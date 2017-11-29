@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
-import { BsCarousel, BsThumbnail, BsJumbotron, ContactFaces, GoogleMap } from '../components';
+import { BsCarousel, Footer } from './home';
+import '../styles/Header.css';
 
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div className="content">
         <BsCarousel />
-        <BsThumbnail />
-        <BsJumbotron />
-        <ContactFaces />
-        <GoogleMap />
+        <Footer />
       </div>
     );
   }

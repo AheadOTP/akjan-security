@@ -7,17 +7,6 @@ function About() {
       something about us <br />
       something about us <br />
       something about us <br />
-      something about us <br />
-      something about us <br />
-      something about us <br />
-      something about us <br />
-      something about us <br />
-      something about us <br />
-      something about us <br />
-      something about us <br />
-      something about us <br />
-      something about us <br />
-      something about us <br />
     </p>
   );
 }
