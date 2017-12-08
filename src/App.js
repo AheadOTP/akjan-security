@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
 import Main from './components/Main';
+import BsNavbar from './components/home/BsNavbar'
 import './App.css';
 
 class App extends Component {
@@ -8,11 +9,11 @@ class App extends Component {
     super(props);
     this.state = {
       addClass: false,
-      mobile: false
+      mobileMenu: false
     };
 
     this.togglePadding = this.togglePadding.bind(this);
-    this.toggleMobile = this.toggleMobile.bind(this);
+    this.toggleMobileMenu = this.toggleMobileMenu.bind(this);
   }
 
   componentDidMount() {
@@ -25,23 +26,24 @@ class App extends Component {
 
   togglePadding() {
     const { addClass } = this.state;
-    if (window.scrollY > this.prev) {
+    if (window.scrollY > 0) {
       if (!addClass) {
         this.setState({ addClass: true });
       }
-    } else if (!this.state.mobile) {
+    } else if (!this.state.mobileMenu) {
       this.setState({ addClass: false });
     }
-
-    this.prev = window.scrollY;
   }
 
-  toggleMobile() {
-    this.setState({ mobile: !this.state.mobile });
+  toggleMobileMenu() {
+    this.setState({
+      mobileMenu: !this.state.mobileMenu,
+      addClass: true
+    });
   }
 
   render() {
-    const classNameNav = this.state.mobile ? 'topnav responsive' : 'topnav';
+    const classNameNav = this.state.mobileMenu ? 'topnav responsive' : 'topnav';
     const classSticky = this.state.addClass ? ' sticky' : '';
     const padClassName = this.state.addClass ? 'addPadding' : '';
 
@@ -49,7 +51,7 @@ class App extends Component {
       <div>
         <Header
           className={classNameNav + classSticky}
-          toggleMobile={this.toggleMobile}
+          toggleMobileMenu={this.toggleMobileMenu}
         />
         <Main className={padClassName} />
       </div>
