@@ -43,15 +43,22 @@ class App extends Component {
   }
 
   render() {
-    const classNameNav = this.state.mobileMenu ? 'topnav responsive' : 'topnav';
+    const isMobile = window.innerWidth <= 735;
+    const expanded = this.state.mobileMenu ? 'expanded' : '';
     const classSticky = this.state.addClass ? ' sticky' : '';
-    const padClassName = this.state.addClass ? 'addPadding' : '';
+    let padClassName;
+    if (!isMobile) {
+      padClassName = this.state.addClass ? 'addPadding' : '';
+    } else {
+      padClassName = 'addPadding';
+    }
 
     return (
       <div>
         <Header
-          className={classNameNav + classSticky}
+          className={classSticky}
           toggleMobileMenu={this.toggleMobileMenu}
+          expanded={expanded}
         />
         <Main className={padClassName} />
       </div>
