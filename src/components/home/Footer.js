@@ -7,6 +7,7 @@ function Footer() {
       <div className="footerElement" >
         <h3>Наши контакты</h3>
         <hr />
+        <br />
         <p>
           Республика Казахстан
           <br />

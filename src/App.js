@@ -50,7 +50,7 @@ class App extends Component {
     if (!isMobile) {
       padClassName = this.state.addClass ? 'addPadding' : '';
     } else {
-      padClassName = 'addPadding';
+      padClassName = 'addPaddingMobile';
     }
 
     return (

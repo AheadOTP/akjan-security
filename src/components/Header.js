@@ -9,9 +9,7 @@ class Header extends Component {
     if (!isMobile) {
       return (
         <div className={'topnav ' + this.props.className}>
-          <Link to="/" className="active">
-            Akjan Security
-          </Link>
+          <Link to="/" className="logo"><img alt="" src={require('../images/big_logo_2.png')} /></Link>
           <Link to="/news">News</Link>
           <Link to="/contact">Контакты</Link>
           <Link to="/about">О нас</Link>
@@ -21,7 +19,7 @@ class Header extends Component {
       return (
         <div>
           <div className={'topnav ' + this.props.className}>
-            <Link to="/" className="active">
+            <Link to="/">
               Akjan Security
             </Link>
             <a className="icon" onClick={this.props.toggleMobileMenu}>
@@ -29,6 +27,7 @@ class Header extends Component {
             </a>
           </div>
           <div className={'links ' + this.props.expanded}>
+            <hr />
             <Link to="/news">News</Link>
             <Link to="/contact">Контакты</Link>
             <Link to="/about">О нас</Link>

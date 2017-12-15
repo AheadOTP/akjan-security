@@ -1,0 +1,14 @@
+.logo img {
+  height: 78px;
+  max-width: 100%;
+}
+
+.logo {
+  float: left;
+  display: block;
+  padding: 3px 3px;
+}
+
+hr {
+  margin: 0;
+}
