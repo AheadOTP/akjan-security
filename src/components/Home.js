@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BsCarousel, Footer } from './home';
+import { BsCarousel } from './home';
 import '../styles/Header.css';
 
 class Home extends Component {
@@ -7,7 +7,6 @@ class Home extends Component {
     return (
       <div className="content">
         <BsCarousel />
-        <Footer />
       </div>
     );
   }

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import Header from './components/Header';
+import Header from './components/common/Header';
 import Main from './components/Main';
-import BsNavbar from './components/home/BsNavbar'
+import BsNavbar from './components/home/BsNavbar';
+import Footer from './components/common/Footer';
 import './App.css';
 
 class App extends Component {
@@ -61,6 +62,7 @@ class App extends Component {
           expanded={expanded}
         />
         <Main className={padClassName} />
+        <Footer />
       </div>
     );
   }

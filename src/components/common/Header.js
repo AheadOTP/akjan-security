@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/Header.css';
+import '../../styles/Header.css';
 
 class Header extends Component {
   render() {
@@ -9,7 +9,7 @@ class Header extends Component {
     if (!isMobile) {
       return (
         <div className={'topnav ' + this.props.className}>
-          <Link to="/" className="logo"><img alt="" src={require('../images/big_logo_2.png')} /></Link>
+          <Link to="/" className="logo"><img alt="" src={require('../../images/big_logo_2.png')} /></Link>
           <Link to="/news">News</Link>
           <Link to="/contact">Контакты</Link>
           <Link to="/about">О нас</Link>
