@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BsCarousel, Service } from './home';
+import { BsCarousel, Service } from './homeComponents';
 import information from '../information';
 import '../styles/Header.css';
 

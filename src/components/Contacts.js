@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ContactFaces } from './contacts';
+import { ContactFaces } from './contactComponents';
 
 class Contacts extends Component {
   render() {

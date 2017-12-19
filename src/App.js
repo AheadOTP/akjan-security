@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './components/common/Header';
 import Main from './components/Main';
-import BsNavbar from './components/home/BsNavbar';
+import BsNavbar from './components/homeComponents/BsNavbar';
 import Footer from './components/common/Footer';
 import './App.css';
 
