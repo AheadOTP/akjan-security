@@ -1,0 +1,30 @@
+.container {
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  align-items: start;
+  grid-template-areas: "img desc";
+}
+
+.container:nth-child(even) {
+  display: grid;
+  grid-template-columns: 1fr 450px;
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  align-items: start;
+  grid-template-areas: "desc img";
+}
+
+.container img {
+  border-radius: 10px;
+}
+
+.serviceImage {
+  margin-top: 28px;
+  grid-area: img;
+}
+
+.serviceDescription {
+  grid-area: desc;
+}

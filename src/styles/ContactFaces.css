@@ -11,10 +11,6 @@
   grid-template-rows: 150px 1fr 1fr 1fr;
 }
 
-img {
-  max-width: 200px;
-}
-
 @media (max-width: 500px) {
   .contactFaces {
     display: grid;
